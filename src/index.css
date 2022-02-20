@@ -1,0 +1,150 @@
+.container {
+  padding: 150px 128px 0;
+}
+.title {
+  text-align: center;
+}
+.game__container {
+  border: 1px solid #369cb7;
+  border-radius: 7px;
+  padding: 45px 120px 95px 77px;
+}
+.game__space__container {
+  display: flex;
+  justify-content: space-between;
+}
+.game__space {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.game_space__button__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.outline__button {
+  margin: 10px auto;
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #369cb7;
+  border: 1px solid #369cb7;
+  background: none;
+  cursor: pointer;
+}
+.outline__button:hover {
+  text-decoration: underline;
+}
+.outline__button:disabled {
+  color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+  cursor: default;
+}
+.outline__button:disabled:hover {
+  text-decoration: none;
+}
+
+.coins__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 340px;
+}
+
+.coin__counter {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  background-color: #34a6c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  right: 0;
+}
+
+.jars__ontainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal__container {
+  z-index: 15;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.562);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coin_checker__container {
+  padding: 50px 100px;
+  border: 1px solid blue;
+  background-color: #fff;
+}
+.coins {
+  display: flex;
+}
+
+.contained__button {
+  margin: 10px auto;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #369cb7;
+  cursor: pointer;
+}
+.contained__button:hover {
+  background: #49d1f7;
+}
+.contained__button:disabled {
+  color: #a8a8a8;
+  background-color: #a8a8a8;
+  cursor: default;
+}
+
+.jars_checker__container {
+  padding: 50px 50px;
+  border: 1px solid blue;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.jars_checker__jars__container {
+  display: flex;
+}
+.results_jar {
+}
+.jar__img__container {
+  position: relative;
+}
+
+.coin_animated {
+  position: absolute;
+  bottom: 14px;
+  animation-duration: 1s;
+  animation-name: coin;
+}
+@keyframes coin {
+  0% {
+    transform: translateY(-200px);
+  }
+  20% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
